@@ -1,0 +1,19 @@
+# Jupyter Notebook checkpoints & autosaves
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Python environment caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+env/
+
+# Local data growth safety net
+# Keeps your sample files safe, but ignores accidental massive raw scrapes
+Raw_Data/*
+Clean_Data/*
+!Raw_Data/.gitkeep
+!Clean_Data/.gitkeep
