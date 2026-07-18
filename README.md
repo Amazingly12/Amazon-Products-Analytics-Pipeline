@@ -2,6 +2,11 @@
 
 > An end-to-end data pipeline that scrapes, cleans, stores, and visualizes Amazon product data across 9 categories from raw HTML to interactive Tableau dashboards.
 
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![MySQL](https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+![n8n](https://img.shields.io/badge/n8n-FF6C37?style=for-the-badge&logo=n8n&logoColor=white)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)
+
 ---
 
 ## Navigate through the README file.
