@@ -1,0 +1,7 @@
+pandas
+SQLAlchemy
+mysql-connector-python
+requests
+beautifulsoup4
+rake-nltk
+nltk
