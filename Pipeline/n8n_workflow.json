@@ -1,0 +1,88 @@
+{
+  "name": "Cleaner and Merger",
+  "nodes": [
+    {
+      "parameters": {
+        "triggerOn": "folder",
+        "path": "D:\\My_Projects\\Project_Amazon_Products_Analytics_Pipeline\\Raw_Data",
+        "events": [
+          "change",
+          "add"
+        ],
+        "options": {}
+      },
+      "type": "n8n-nodes-base.localFileTrigger",
+      "typeVersion": 1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "aa9d9139-631a-4aea-b69a-ae9985f16a5e",
+      "name": "File_Trigger_"
+    },
+    {
+      "parameters": {
+        "command": "=python \"D:/My_Projects/Project_Amazon_Products_Analytics_Pipeline/n8n_Cleaners/n8n_merger.py\" \"D:/My_Projects/Project_Amazon_Products_Analytics_Pipeline/Clean_Data\" \"amazon_products\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        320,
+        0
+      ],
+      "id": "986c7d40-7bb4-4ebf-81c1-9521f8266ccd",
+      "name": "File_Merger"
+    },
+    {
+      "parameters": {
+        "command": "=python \"D:\\My_Projects\\Project_Amazon_Products_Analytics_Pipeline\\n8n_Cleaners\\n8n_cleaner.py\" \"{{ $json.path }}\" \"{{ $json.path.replace('Raw_Data', 'Clean_Data').replace(/[^\\\\]+$/, 'clean_' + $json.path.split('\\\\').pop()) }}\""
+      },
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [
+        160,
+        0
+      ],
+      "id": "45e3ec7d-f695-4983-85ae-7949b375ec16",
+      "name": "Cleaner_File_1"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "File_Trigger_": {
+      "main": [
+        [
+          {
+            "node": "Cleaner_File_1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Cleaner_File_1": {
+      "main": [
+        [
+          {
+            "node": "File_Merger",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "b8921a87-987d-40e8-b570-279b99f62657",
+  "meta": {
+    "instanceId": "9128eb0443bf31207e50e579ecda8d91e3a07998c2cbe8c9171380df80ab87c1"
+  },
+  "nodeGroups": [],
+  "id": "ENFiAczJ1LrSzQma",
+  "tags": []
+}
