@@ -18,7 +18,7 @@
 
 ## Data Architecture
 
-![Pipeline Architecture](Pipeline_Architecture.png)
+![Pipeline Architecture](Docs/Pipeline_Architecture.png)
 
 The pipeline moves data through four stages:
 
@@ -142,7 +142,7 @@ Designed for sellers and market researchers to quickly identify low-competition,
 - Interactive Filters
 
 <p align="center">
-<img src="/Dashboards/EntryStrategy_Dashboard.png" width="900">
+<img src="Docs/Dashboards/EntryStrategy_Dashboard.png" width="900">
 </p>
 
 ---
@@ -160,7 +160,7 @@ Provides detailed pricing intelligence by analyzing discounts, pricing distribut
 - Interactive Filters
 
 <p align="center">
-<img src="/Dashboards/TagIntel_Dashboard.png" width="900">
+<img src="Docs/Dashboards/TagIntel_Dashboard.png" width="900">
 </p>
 
 ---
@@ -170,9 +170,9 @@ Provides detailed pricing intelligence by analyzing discounts, pricing distribut
 A closer look at individual visualizations powering the dashboards.
 
 <p align="center">
-  <img src="/Dashboards/KPIS_Pic.png" width="350" height = "400"/>
-  <img src="/Dashboards/Discount_Histogram.png" width="350" height = "400"/>
-  <img src="/Dashboards/Pricing_Distribution.png" width="350" height = "400"/>
+  <img src="Docs/Dashboards/KPIS_Pic.png" width="350" height = "400"/>
+  <img src="Docs/Dashboards/Discount_Histogram.png" width="350" height = "400"/>
+  <img src="Docs/Dashboards/Pricing_Distribution.png" width="350" height = "400"/>
 </p>
 
 ---
@@ -182,7 +182,7 @@ A closer look at individual visualizations powering the dashboards.
 Watch the interactive Tableau dashboard in action, including filtering, category selection, and KPI updates.
 
 <p align="center">
-<img src="/Dashboards/TagIntel.gif" width="900">
+<img src="Docs/Dashboards/TagIntel.gif" width="900">
 </p>
 
 > Demonstrates interactive filters, dynamic KPI updates, pricing analysis, and competition insights.
