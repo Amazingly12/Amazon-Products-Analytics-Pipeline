@@ -46,7 +46,7 @@ The pipeline moves data through four stages:
 
 **1. Clone the repo**
 ```bash
-git clone https://github.com/AmAzInG@12/Amazon-Products-Analytics-Pipeline.git
+git clone https://github.com/Amazingly12/Amazon-Products-Analytics-Pipeline.git
 cd Amazon-Products-Analytics-Pipeline
 
 # Install Python dependencies
@@ -84,8 +84,7 @@ Project_Amazon_Products_Analytics_Pipeline/
 ├── requirements.txt
 ├── .gitignore
 ├── Scrapers/
-│   ├── Scraping_Script.ipynb
-│   └── scraper_config
+│   └── Scraping_Script.ipynb
 ├── Raw_Data/
 │   └── Scraped Data will get saved here.
 ├── Clean_Data/
@@ -99,8 +98,10 @@ Project_Amazon_Products_Analytics_Pipeline/
 │   ├── Procedures_Maintenance.sql
 │   ├── Schema.sql
 │   └── Views.sql
+├── Dashboard_Download/
+│   └── Amazon_Market_Intelligence.twbx
 ├── Docs/
-│   ├── dashboard_screenshots/
+│   ├── Dashboards/
 │   └── pipeline_architecture.png
 └── Sample_Data/
 │   ├── Sample_Cleaned_Data.csv
@@ -122,17 +123,17 @@ Project_Amazon_Products_Analytics_Pipeline/
 
 ---
 
-# Dashboards
+## Dashboards
 
 The analytics layer consists of two interactive Tableau dashboards designed to help identify profitable product opportunities and understand pricing behavior across Amazon categories.
 
 ---
 
-## Entry Strategy Dashboard
+### Entry Strategy Dashboard
 
 Designed for sellers and market researchers to quickly identify low-competition, high-potential product categories.
 
-### Highlights
+**Highlights**
 
 - Competition Density Score
 - Top Performing Brands
@@ -147,11 +148,11 @@ Designed for sellers and market researchers to quickly identify low-competition,
 
 ---
 
-## TagIntel Dashboard
+### TagIntel Dashboard
 
 Provides detailed pricing intelligence by analyzing discounts, pricing distributions, customer ratings, and category trends.
 
-### Highlights
+**Highlights**
 
 - Discount Distribution
 - Price vs MRP Analysis
@@ -165,7 +166,7 @@ Provides detailed pricing intelligence by analyzing discounts, pricing distribut
 
 ---
 
-# Dashboard Gallery
+### Dashboard Gallery
 
 A closer look at individual visualizations powering the dashboards.
 
@@ -177,7 +178,7 @@ A closer look at individual visualizations powering the dashboards.
 
 ---
 
-# Dashboard Walkthrough
+### Dashboard Walkthrough
 
 Watch the interactive Tableau dashboard in action, including filtering, category selection, and KPI updates.
 
@@ -194,4 +195,4 @@ Watch the interactive Tableau dashboard in action, including filtering, category
 
 ## Contact
 
-Built by  | [LinkedIn](#) | [Github](#)
+Built by Akshat Aashish Borkar | [LinkedIn](#https://www.linkedin.com/in/akshat-borkar-b8034734b/) | [Github](#https://github.com/Amazingly12)
